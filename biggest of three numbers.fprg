@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CSE LAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-08 11:19:59 AM"/>
+        <attribute name="created" value="Q1NFIExBQjtsYWIwMjA1MTsyMDI1LTA3LTA4OzExOjA2OjUyIEFNOzIyNzc="/>
+        <attribute name="edited" value="Q1NFIExBQjtsYWIwMjA1MTsyMDI1LTA3LTA4OzExOjE5OjU5IEFNOzE7MjM5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="&quot; a is Largest&quot;" newline="True"/>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&gt;c">
+                        <then>
+                            <output expression="&quot;b is Largest&quot;" newline="True"/>
+                            <output expression="b" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;c is Largest&quot;" newline="True"/>
+                            <output expression="c" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

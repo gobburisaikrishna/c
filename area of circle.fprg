@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CSE LAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-08 11:06:04 AM"/>
+        <attribute name="created" value="Q1NFIExBQjtsYWIwMjA1MTsyMDI1LTA3LTA4OzEwOjUxOjM2IEFNOzIyNzg="/>
+        <attribute name="edited" value="Q1NFIExBQjtsYWIwMjA1MTsyMDI1LTA3LTA4OzExOjA2OjA0IEFNOzE7MjM4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the circle radius&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="area" expression="PI*r*r"/>
+            <output expression="&quot;Area of the circle with radius &quot;&amp;&quot;=&quot;&amp;Area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
