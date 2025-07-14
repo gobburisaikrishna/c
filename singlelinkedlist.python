@@ -1,0 +1,67 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+class SinglyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    def add_front(self, data):
+        """Insert a node at the front of the list"""
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+    def add_end(self, data):
+        """Insert a node at the end of the list"""
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
+        curr = self.head
+        while curr.next:
+            curr = curr.next
+        curr.next = new_node
+
+    def remove_front(self):
+        """Remove a node from the front of the list"""
+        if self.head is None:
+            print("List is empty. Nothing to remove.")
+            return
+        removed_data = self.head.data
+        self.head = self.head.next
+        print(f"Removed from front: {removed_data}")
+
+    def remove_end(self):
+        """Remove a node from the end of the list"""
+        if self.head is None:
+            print("List is empty. Nothing to remove.")
+            return
+        if self.head.next is None:
+            removed_data = self.head.data
+            self.head = None
+            print(f"Removed from end: {removed_data}")
+            return
+        curr = self.head
+        while curr.next.next:
+            curr = curr.next
+        removed_data = curr.next.data
+        curr.next = None
+        print(f"Removed from end: {removed_data}")
+
+    def display(self):
+        """Display all elements in the list"""
+        if self.head is None:
+            print("List is empty.")
+            return
+        curr = self.head
+        print("Linked List:", end=" ")
+        while curr:
+            print(curr.data, end=" -> ")
+            curr = curr.next
+        print("None")
+
+
+
